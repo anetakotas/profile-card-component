@@ -1,0 +1,41 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 18px;
+  background-color: #19a2ae;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.profileCard {
+  background-color: whitesmoke;
+  width: 400px;
+  height: 400px;
+  border-radius: 15px;
+  -webkit-box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.124);
+          box-shadow: 0px 50px 50px rgba(0, 0, 0, 0.124);
+}
+
+.pattern {
+  background-image: url(/images/bg-pattern-card.svg);
+  height: 150px;
+  border-radius: 15px 15px 0 0;
+}
+/*# sourceMappingURL=style.css.map */

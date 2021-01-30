@@ -1,0 +1,37 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+    background-color: hsl(185, 75%, 39%);
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profileCard {
+    background-color: whitesmoke;
+    width: 400px;
+    height: 400px;
+    border-radius: 15px;
+    box-shadow: 0px 50px 50px hsla(0, 0%, 0%, 0.124);
+}
+
+.pattern {
+    background-image: url(/images/bg-pattern-card.svg);
+    height: 150px;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.name {
+
+}
