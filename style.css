@@ -35,7 +35,58 @@ body {
 
 .pattern {
   background-image: url(/images/bg-pattern-card.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 150px;
   border-radius: 15px 15px 0 0;
+}
+
+.nameAndAvatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.nameAndAvatar img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 5px whitesmoke solid;
+  position: absolute;
+  top: -60px;
+}
+
+.name {
+  font-size: 20px;
+  padding-top: 80px;
+  font-weight: 700;
+}
+
+.name span, .name div {
+  font-weight: 400;
+  color: #6a6f81;
+}
+
+.name div {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.name div:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */

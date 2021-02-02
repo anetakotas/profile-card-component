@@ -1,3 +1,7 @@
+$fontBold: 700;
+$fontNormal: 400;
+$DarkGrayishBlue: hsl(227, 10%, 46%);
+
 *, *::before, *::after {
     box-sizing: border-box;
     margin: 0;
@@ -27,11 +31,47 @@ body {
 
 .pattern {
     background-image: url(/images/bg-pattern-card.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 150px;
     border-radius: 15px 15px 0 0;
 
 }
 
-.name {
+.nameAndAvatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
 
+.nameAndAvatar img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 5px whitesmoke solid;
+    position: absolute;
+    top: -60px;
+}
+
+.name {
+    font-size: 20px;
+    padding-top: 80px;
+    font-weight: $fontBold;
+
+    span, div {
+        font-weight: $fontNormal;
+        color: $DarkGrayishBlue;
+    }
+
+    div {
+        font-size: 18px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.name div:nth-child(2) {
+    display: flex;
+    justify-content: center;
 }
