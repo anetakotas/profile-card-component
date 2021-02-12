@@ -53,6 +53,10 @@ body {
     z-index: 3;
 }
 
+.profileCard:hover {
+    transform: scale(1.05);
+}
+
 .pattern {
     background-image: url(/images/bg-pattern-card.svg);
     background-repeat: no-repeat;
@@ -67,15 +71,17 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-}
+    
 
-.nameAndAvatar img {
-    height: 120px;
-    width: 120px;
-    border-radius: 50%;
-    border: 5px whitesmoke solid;
-    position: absolute;
-    top: -60px;
+    img {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border: 5px whitesmoke solid;
+        position: absolute;
+        top: -60px;
+        left: 35%;
+    }
 }
 
 .name {
@@ -83,6 +89,16 @@ body {
     padding-top: 80px;
     font-weight: $fontBold;
     color:$VeryDarkDesaturatedBlue;
+
+    a {
+        text-decoration: none;
+        color: $VeryDarkDesaturatedBlue;
+    }
+
+    a:hover {
+        color: $DarkGrayishBlue;
+    }
+
 
     span, div {
         font-weight: $fontNormal;
@@ -95,8 +111,10 @@ body {
 
     div {
         font-size: 16px;
-        margin-top: 14px;
+        margin-top: 10px;
         margin-bottom: 30px;
+        display: grid;
+        place-items: center;
     }
 }
 

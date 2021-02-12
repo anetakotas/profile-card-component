@@ -54,6 +54,11 @@ body {
   z-index: 3;
 }
 
+.profileCard:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .pattern {
   background-image: url(/images/bg-pattern-card.svg);
   background-repeat: no-repeat;
@@ -83,6 +88,7 @@ body {
   border: 5px whitesmoke solid;
   position: absolute;
   top: -60px;
+  left: 35%;
 }
 
 .name {
@@ -90,6 +96,15 @@ body {
   padding-top: 80px;
   font-weight: 700;
   color: #2d3248;
+}
+
+.name a {
+  text-decoration: none;
+  color: #2d3248;
+}
+
+.name a:hover {
+  color: #6a6f81;
 }
 
 .name span, .name div {
@@ -103,8 +118,11 @@ body {
 
 .name div {
   font-size: 16px;
-  margin-top: 14px;
+  margin-top: 10px;
   margin-bottom: 30px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
 }
 
 .name div:nth-child(2) {
